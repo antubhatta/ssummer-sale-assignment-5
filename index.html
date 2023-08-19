@@ -11,7 +11,7 @@
 <!-- google font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- tailwind custom design  -->
 <style>
@@ -20,14 +20,77 @@
     }
 </style>
 </head>
-<body>
+<body class="font-work-sans ">
     <!-- header related section -->
-    <header>
+    <header class="bg-[#F9F6E2]">
+            <div class="flex flex-row justify-center gap-7 container mx-auto h-[100vh]">
+                <div class="text-center">
+                  <h4 class="text-[#111] text-3xl font-medium mt-60 mb-8">---SALE FEVER---</h4>
+                  <h3 class="w-[650px] text-[#111] text-5xl font-bold mb-20">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h3>
+                  <div class="flex flex-row justify-center items-center gap-4">
+                    <h3 class="text-[#111] text-2xl font-medium">Use Promo Code</h3>
+                    <button class="bg-[#E527B2] text-white px-6 py-4 rounded-lg">SELL200</button>
+                  </div>
+                </div>
 
-    </header>
+                <div>
+                    <img class="mt-20 mb-20" src="./images/Summer 1.png" alt="">
+                </div>
+            </div>
+            </header>
     <!-- main related section -->
-    <main>
+    <main class="bg-[#F8F8F8] container mx-auto">
+        <!-- main container -->
+        <div class="">
+            
+            <!-- card -->
+            <div>
+                <h2 class="mt-28 text-[#111] text-4xl font-semibold mb-8">Kitchenware</h2>
+                <!-- kitchenwareCard -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- first card -->
+                    <div class="card w-96 bg-[#FFF] rounded-lg">
+                        <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                          <img src="./images/prod1.png"class="" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <div class="flex mt-5">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                          </div>
+                          <p class="mt-2 text-[#111] text-xl font-semibold">K. Accessories</p>
+                          <p class="mt-2 mb-5 text-[#11111180] text-xl font-normal">39.00 TK</p>
+                        </div>
+                      </div>
+                       <!-- Second card -->
+                    <div class="card w-96 bg-[#FFF] rounded-lg">
+                        <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                          <img src="./images/prod1.png"class="" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <div class="flex mt-5">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                          </div>
+                          <p class="mt-2 text-[#111] text-xl font-semibold">K. Accessories</p>
+                          <p class="mt-2 mb-5 text-[#11111180] text-xl font-normal">39.00 TK</p>
+                        </div>
+                      </div>
+                      
+                </div>
+               
 
+                </div>
+            
+            <!-- calculation -->
+            <div></div>
+        </div>
     </main>
 </body>
 </html>
