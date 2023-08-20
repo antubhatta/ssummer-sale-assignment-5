@@ -65,4 +65,5 @@ btnModal.addEventListener('click',function(){
     discountValue.innerText='0.00'
     grandTotalValue.innerText='0.00'
     totalPrice.innerText='0.00'
+    selectedProduct.innerHTML=''
 })
