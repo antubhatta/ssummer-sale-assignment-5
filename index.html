@@ -18,12 +18,17 @@
     .font-work-sans {
         font-family: 'Work Sans', sans-serif;
     }
+    ::placeholder {
+  color: #11111166;
+  font-size: 20px;
+  font-weight: 400;
+}
 </style>
 </head>
 <body class="font-work-sans ">
     <!-- header related section -->
     <header class="bg-[#F9F6E2]">
-            <div class="flex flex-row justify-center gap-7 container mx-auto h-[100vh]">
+            <div class="flex flex-col lg:flex-row justify-center gap-7 lg:container lg:mx-auto">
                 <div class="text-center">
                   <h4 class="text-[#111] text-3xl font-medium mt-60 mb-8">---SALE FEVER---</h4>
                   <h3 class="w-[650px] text-[#111] text-5xl font-bold mb-20">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h3>
@@ -39,17 +44,17 @@
             </div>
             </header>
     <!-- main related section -->
-    <main class="bg-[#F8F8F8] container mx-auto">
+    <main class="bg-[#F8F8F8] lg:container lg:mx-auto">
         <!-- main container -->
-        <div class="">
+        <div class="flex gap-6">
             
             <!-- card -->
-            <div>
+            <div class="flex-1">
                 <h2 class="mt-28 text-[#111] text-4xl font-semibold mb-8">Kitchenware</h2>
                 <!-- kitchenwareCard -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- first card -->
-                    <div class="card w-96 bg-[#FFF] rounded-lg">
+                    <div class="card bg-[#FFF] rounded-lg">
                         <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
                           <img src="./images/prod1.png"class="" />
                         </figure>
@@ -66,9 +71,83 @@
                         </div>
                       </div>
                        <!-- Second card -->
-                    <div class="card w-96 bg-[#FFF] rounded-lg">
+                    <div class="card bg-[#FFF] rounded-lg">
                         <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
-                          <img src="./images/prod1.png"class="" />
+                          <img src="./images/prod2.png"class="" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <div class="flex mt-5">
+                            <img src="./images/frame2.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                          </div>
+                          <p class="mt-2 text-[#111] text-xl font-semibold">K. Accessories</p>
+                          <p class="mt-2 mb-5 text-[#11111180] text-xl font-normal">25.00 TK</p>
+                        </div>
+                      </div>
+                       <!-- third card -->
+                    <div class="card bg-[#FFF] rounded-lg">
+                        <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                          <img src="./images/prod3.png"class="" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <div class="flex mt-5">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                          </div>
+                          <p class="mt-2 text-[#111] text-xl font-semibold">Home Cooker</p>
+                          <p class="mt-2 mb-5 text-[#11111180] text-xl font-normal">49.00 TK</p>
+                        </div>
+                      </div>
+
+                </div>
+
+                <h2 class="mt-28 text-[#111] text-4xl font-semibold mb-8">Sportswear</h2>
+                <!-- SportswearCard -->
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- fourth card -->
+                    <div class="card bg-[#FFF] rounded-lg">
+                        <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                          <img src="./images/prod4.png"class="" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <div class="flex mt-5">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                          </div>
+                          <p class="mt-2 text-[#111] text-xl font-semibold">Sports Back Cap</p>
+                          <p class="mt-2 mb-5 text-[#11111180] text-xl font-normal">49.00 TK</p>
+                        </div>
+                      </div>
+                       <!-- Second card -->
+                    <div class="card bg-[#FFF] rounded-lg">
+                        <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                          <img src="./images/prod5.png"class="" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <div class="flex mt-5">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                          </div>
+                          <p class="mt-2 text-[#111] text-xl font-semibold">Full Jersey Set</p>
+                          <p class="mt-2 mb-5 text-[#11111180] text-xl font-normal">69.00 TK</p>
+                        </div>
+                      </div>
+                       <!-- third card -->
+                    <div class="card bg-[#FFF] rounded-lg">
+                        <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                          <img src="./images/prod6.png"class="" />
                         </figure>
                         <div class="card-body items-center text-center">
                           <div class="flex mt-5">
@@ -78,18 +157,102 @@
                             <img src="./images/frame2.svg" alt="">
                             <img src="./images/frame2.svg" alt="">
                           </div>
-                          <p class="mt-2 text-[#111] text-xl font-semibold">K. Accessories</p>
-                          <p class="mt-2 mb-5 text-[#11111180] text-xl font-normal">39.00 TK</p>
+                          <p class="mt-2 text-[#111] text-xl font-semibold">Sports cates</p>
+                          <p class="mt-2 mb-5 text-[#11111180] text-xl font-normal">159.00 TK</p>
                         </div>
                       </div>
-                      
+
+                </div>
+
+                <h2 class="mt-28 text-[#111] text-4xl font-semibold mb-8">Furniture</h2>
+                <!-- FurnitureCard -->
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- seven card -->
+                    <div class="card bg-[#FFF] rounded-lg">
+                        <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                          <img src="./images/prod7.png"class="" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <div class="flex mt-5">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame2.svg" alt="">
+                          </div>
+                          <p class="mt-2 text-[#111] text-xl font-semibold">Single Relax Chair</p>
+                          <p class="mt-2 mb-5 text-[#11111180] text-xl font-normal">185.00 TK</p>
+                        </div>
+                      </div>
+                       <!-- eight card -->
+                    <div class="card bg-[#FFF] rounded-lg">
+                        <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                          <img src="./images/prod8.png"class="" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <div class="flex mt-5">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                          </div>
+                          <p class="mt-2 text-[#111] text-xl font-semibold">Children play</p>
+                          <p class="mt-2 mb-5 text-[#11111180] text-xl font-normal">299.00 TK</p>
+                        </div>
+                      </div>
+                       <!-- nine card -->
+                    <div class="card bg-[#FFF] rounded-lg">
+                        <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                          <img src="./images/prod9.png"class="" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <div class="flex mt-5">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                            <img src="./images/frame1.svg" alt="">
+                          </div>
+                          <p class="mt-2 text-[#111] text-xl font-semibold">Flexible Sofa</p>
+                          <p class="mt-2 mb-5 text-[#11111180] text-xl font-normal">339.00 TK</p>
+                        </div>
+                      </div>
+
                 </div>
                
 
                 </div>
             
             <!-- calculation -->
-            <div></div>
+            <div class="">
+                <div class="bg-[#FFF] rounded-lg pl-6">
+                  <h3 class="mt-[184px] pb-4 pt-6 text-2xl font-medium">Have coupon?</h3>
+                  <div class="flex items-center  ">
+                    <input class="rounded-lg border border-solid border-[#11111126] mb-6 outline-none py-4 pl-4" placeholder="Coupon code" type="text" name="" id="">
+                    <button class="bg-[#E527B2] rounded-tl-0 rounded-tr-lg rounded-br-lg mb-6 rounded-bl-0 text-white px-5 py-3 pb-5 mr-6">Apply</button>
+                  </div>
+                </div>
+
+                <!-- make purchase part -->
+                <div>
+                  <div class="bg-[#FFF] rounded-lg pl-6 mt-6">
+                    <ul type="1" class="font-medium text-2xl pt-6">
+                      <li>Home Cooker</li>
+                      <li>Sports cats</li>
+                      <li>Home Cooker</li>
+                    </ul>
+                    <div class="border-b w-[294px] border-[#11111126] mt-4 mb-4 "></div>
+                    <div class="text-2xl font-medium">
+                      <h3>Total price: <span class="text-[#11111180]">257.00TK</span></h3>
+                    <h3>Discount: <span class="text-[#11111180]">51.40TK</span></h3>
+                    <h3>Total: <span class="text-[#11111180]">205.60TK</span></h3>
+                    <div class="border-b w-[294px] border-[#11111126] mt-4 "></div>
+                    </div>
+                    
+                  </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
