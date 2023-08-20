@@ -178,7 +178,7 @@
 
                 <h2 class="mt-28 text-[#111] text-4xl font-semibold mb-8">Furniture</h2>
                 <!-- FurnitureCard -->
-                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-40">
                     <!-- seven card -->
                     <div>
                       <div onclick="cardClickBtn(this)" class="card bg-[#FFF] rounded-lg">
@@ -247,8 +247,8 @@
                 <div class="bg-[#FFF] rounded-lg pl-6">
                   <h3 class="mt-[184px] pb-4 pt-6 text-2xl font-medium">Have coupon?</h3>
                   <div class="flex items-center  ">
-                    <input class="rounded-lg border border-solid border-[#11111126] mb-6 outline-none py-4 pl-4" placeholder="Coupon code" type="text" name="" id="">
-                    <button disabled class="bg-[#E527B2] rounded-tl-0 rounded-tr-lg rounded-br-lg mb-6 rounded-bl-0 text-white px-5 py-3 pb-5 mr-6">Apply</button>
+                    <input id="coupon-field" class="rounded-lg border border-solid border-[#11111126] mb-6 outline-none py-4 pl-4" placeholder="Coupon code" type="text" name="" id="">
+                    <button disabled id="btn-apply" class="bg-[#E527B2] rounded-tl-0 rounded-tr-lg rounded-br-lg mb-6 rounded-bl-0 text-white px-5 py-3 pb-5 mr-6">Apply</button>
                   </div>
                 </div>
 
@@ -259,11 +259,24 @@
                     </ol>
                     <div class="border-b w-[294px] border-[#11111126] mt-4 mb-4 "></div>
                     <div class="text-2xl font-medium relative">
-                      <h3>Total price: <span id="total-price" class="text-[#11111180]">0.00TK</span></h3>
-                    <h3>Discount: <span class="text-[#11111180]">0.40TK</span></h3>
-                    <h3>Total: <span class="text-[#11111180]">0.60TK</span></h3>
+                      <h3>Total price: <span id="total-price" class="text-[#11111180]">0.00</span><span class="text-[#11111180]">TK</span> </h3>
+                    <h3>Discount: <span id="discount" class="text-[#11111180]">0.00</span><span class="text-[#11111180]">TK</span> </h3>
+                    <h3>Total: <span id="grand-total" class="text-[#11111180]">0.00</span><span class="text-[#11111180]">TK</span> </h3>
                     <div class="border-b w-[294px] border-[#11111126] mt-4"></div>
-                    <button disabled class="w-[294px] bg-[#E527B2] text-white text-xl font-semibold py-4 rounded-lg translate-y-[50%]">Make Purchase</button>
+                    <!-- bonus modal start -->
+                    <button  onclick="my_modal_3.showModal()" disabled id="btn-purchase" class="w-[294px] bg-[#E527B2] text-white text-xl font-semibold py-4 rounded-lg translate-y-[50%]">Make Purchase</button>
+                    <dialog id="my_modal_3" class=" modal modal-bottom px-4 sm:modal-middle pb-24">
+                      <form method="dialog" class="modal-box">
+                          <figure class="flex justify-center pt-20"><img class="mb-7" src="./images/congo.png" /></figure>
+                          <h3 class="font-bold text-5xl text-center mb-4">Congratulations</h3>
+                          <p class="pb-12 font-xl text-[#1111117F] text-center">Your Purchase the product</p>
+      
+                      <div class="flex justify-center  mb-24">
+                        <button id="btn-modal" class="rounded-lg bg-[#E527B2] text-xl font-semibold py-4 px-7 text-white">Go Home</button>
+                      </div>
+                              
+                      </form>
+                  </dialog>
                     </div>
                     
                   </div>
