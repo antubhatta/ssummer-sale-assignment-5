@@ -38,21 +38,15 @@ function cardClickBtn(target) {
 btnApply.addEventListener("click", function () {
   const couponValue = couponField.value;
   const currentTotalPrice = parseFloat(totalPrice.innerText);
-  couponField.value = " ";
+  
   if (couponValue === "SELL200") {
     const discountAmount = (currentTotalPrice / 100) * 20;
     const grandTotal = currentTotalPrice - discountAmount;
 
-    const discountPriceString = discountValue.innerText;
-    const discountPrice = parseFloat(discountPriceString);
-    const discountTotalPrice = discountPrice + discountAmount;
-    discountValue.innerText = discountTotalPrice.toFixed(2);
-
-    const grandTotalValueString = grandTotalValue.innerText;
-    const grandTotals = parseFloat(grandTotalValueString);
-    const total = grandTotal + grandTotals;
-    grandTotalValue.innerText = total.toFixed(2);
+    discountValue.innerText = discountAmount.toFixed(2);
+    grandTotalValue.innerText = grandTotal.toFixed(2);
   }
+  couponField.value = "";
 });
 
 btnModal.addEventListener("click", function () {
@@ -60,6 +54,7 @@ btnModal.addEventListener("click", function () {
   grandTotalValue.innerText = "0.00";
   totalPrice.innerText = "0.00";
   selectedProduct.innerHTML = "";
+  couponField.value=''
 
   btnApply.setAttribute("disabled", true);
   btnPurchase.setAttribute("disabled", true);
